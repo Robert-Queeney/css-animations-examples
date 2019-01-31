@@ -1,0 +1,19 @@
+p {
+    width: 50px; 
+    height: 50px; 
+    background-color: royalblue;
+}
+
+p.move-right{
+    background-color: yellow;
+    transform: translateX(150%);
+}
+
+p.move-down{
+    background-color: crimson;
+    transform: translateY(75px);
+}
+
+p:hover{
+    transform: translate(25px, 100%); /*first one is x, second is y */
+}

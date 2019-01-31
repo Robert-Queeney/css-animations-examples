@@ -1,0 +1,16 @@
+p { 
+    width: 50px;
+    height: 50px;
+    background-color: #1abc9c;
+    color: #ecf0f1;
+    border: 2px solid #2c3e50;
+  }
+
+  .transformed{
+      background-color: coral; 
+      transform: scale(5); /*this will grow it to 'x' times the original size*/
+      /* transform: scaleX(2); */
+      /* transform: scale(1.25, 2); x and y */
+      transform-origin: left top; /* wrks just like the code below (0 0) */
+      /* transform-origin: 0 0; this sets the origin to the top left point (box wont get cut off) */
+  }

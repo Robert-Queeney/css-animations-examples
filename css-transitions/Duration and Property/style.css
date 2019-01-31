@@ -1,0 +1,23 @@
+.box {
+    background: #9b59b6;
+    height: 100px;
+    width: 100px;
+    line-height:100px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    border-radius: 20px;
+  }
+
+  .box:hover {
+    background: #e74c3c;
+    transform-origin: top left;
+    transform:scale(2); /* rotate(45deg); you cannot specify which transform you want to transition it will do both if you include both */
+    border-radius: 50px;
+    /* opacity: 0.75;  */
+  }
+
+  .animated{
+      transition-property: background, border-radius, transform; /* can have as many as you want here in commas*/
+      transition-duration: 5s, 1s, 3s; /* you can specify diff times for diff properties (background takes 5s here and border-radius takes 1s) */
+  }

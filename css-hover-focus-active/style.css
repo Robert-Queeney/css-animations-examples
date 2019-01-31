@@ -1,0 +1,39 @@
+button{
+    background: lightseagreen;
+}
+
+button:hover{
+    color: white; 
+}
+button:active{
+    border: 5px solid red;
+    font-size: 30px;
+}
+
+button:focus{
+    border-radius: 10px; 
+    background-color: blueviolet;
+}
+
+h1:hover{
+    background-color: blue;
+}
+
+/* focus is when you click on or tab to an element */
+button:focus{
+    border-radius: 10px; 
+    background-color: blueviolet;
+}
+
+input:focus{
+    background-color: red;
+}
+
+p:active,
+h1:active{
+    background-color: yellow;
+}
+
+
+
+

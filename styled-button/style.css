@@ -1,0 +1,38 @@
+body {
+    background-color: #fcd04b; 
+    font-family: Lato; 
+    color: white; 
+}
+
+h1{
+    text-align: center; 
+    font-weight: 300; 
+}
+
+.btn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative; /* This keeps the button in place while the box shadow shrinks */
+    background-color: #fcad26;
+    font-size: 16px; 
+    font-weight: 300px; 
+    color: white; 
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    padding: 25px 80px; 
+    margin: 0 auto; /* this centers the button */
+    border-radius: 20px; /* this rounds the corners */
+    box-shadow: 0 6px #efa424; /* x-offset, y-offset, shadow color */
+  }
+
+  .btn:hover{
+      box-shadow: 0 4px #efa424; /* this shrinks the shadow as you hover */
+      top: 2px; /* becasue the btn position is relative, this makes the top move instaed of the shadow*/
+  }
+
+  .btn:active{
+      box-shadow: 0 0 #efa424;
+      top: 6px; 
+  }
