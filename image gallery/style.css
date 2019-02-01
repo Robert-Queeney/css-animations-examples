@@ -95,5 +95,5 @@ div.item i {
 /* I want the below to trigger when someone hovers over anything on the photo, not just the i, so the hover is on the item (div.item:hover i  NOT div.item.i.hover) */
 div.item:hover i{
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275); /* this is his code and makes the fa get too big and then shrinks back down - used an easing tool to get these numbers*/
 }

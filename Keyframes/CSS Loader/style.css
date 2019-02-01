@@ -1,0 +1,82 @@
+html {
+    background: #ecf0f1;
+  }
+  
+  body, h1, h2 {
+    font-family: Helvetica, Sans-serif; 
+    color: #2c3e50;
+    margin:0; 
+    padding:0; 
+    font-weight:300;
+  }
+  
+  h1 {
+    font-size: 80px;
+  }
+  
+  h2 {
+    font-size: 36px;
+    opacity: 0;
+    animation: appear 1s 3s forwards;
+  }
+  
+  .container{
+    margin:4em;
+    text-align: center;
+  }
+
+  .loader{
+      margin: auto; 
+      margin-top: 100px; 
+      margin-bottom: 100px; 
+      border: 16px solid #bdc3c7; 
+      width: 120px;
+      height: 120px;
+      border-top-color: orange; 
+      border-bottom-color: orangered; 
+      border-radius: 50%;
+      animation: colorspin 4s linear infinite;
+  }
+
+
+
+  /* this is an complex as you need to be for the loader   everything below is just adding to it
+  @keyframes spin {
+      0%{
+          transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg);
+    }
+  } */
+
+  @keyframes colorspin {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        border-top-color: yellowgreen; 
+        border-bottom-color: aquamarine
+    }
+    50%{
+      border-top-color: purple; 
+      border-bottom-color: darkgoldenrod
+  }
+  75%{
+      border-top-color: red; 
+      border-bottom-color: indianred
+  }
+    100%{
+      transform: rotate(720deg);
+  }
+}
+
+@keyframes appear{
+    0%{
+        opacity: 0; 
+    }
+    100%{
+        opacity: 100; 
+    }
+}
+  
